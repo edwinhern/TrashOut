@@ -1,3 +1,11 @@
+from exceptions import (
+    ProviderNotFoundException,
+    NoMMSSupportException,
+    NumberNotValidException,
+)
+from database.connect import Connect
+from providers import PROVIDERS
+from os.path import basename
 import email
 import smtplib
 import ssl
@@ -11,15 +19,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 sys.path.insert(0, '..')
-from os.path import basename
-from providers import PROVIDERS
-from database.connect import Connect
-
-from exceptions import (
-    ProviderNotFoundException,
-    NoMMSSupportException,
-    NumberNotValidException,
-)
 
 
 def validate_number(number: str):
@@ -45,7 +44,7 @@ def validate_number(number: str):
 def format_provider_email_address(number: str, provider: str, mms=False):
     provider_info = PROVIDERS.get(provider)
 
-    if provider_info == None:
+    if provider_info is None:
         raise ProviderNotFoundException(provider)
 
     domain = provider_info.get("sms")
@@ -129,21 +128,24 @@ def send_mms_via_email(
         email.login(sender_email, email_password)
         email.sendmail(sender_email, receiver_email, text)
 
+
 def main():
     # number = "123456789"
     # message = "It Works!"
     # provider = "Verizon"
 
-    client = Connect.get_connection() # connnect to database server
-    db = client.data.users # access database.collection
-    for document in db.find(): # iterate over all documents
+    client = Connect.get_connection()  # connnect to database server
+    db = client.data.users  # access database.collection
+    for document in db.find():  # iterate over all documents
         name = document['name']
         number = document['phoneNumber']
         provider = document['Carrier']
-        print(f"My name is: {name}. I have {provider} and number is {number}\n")
-    
+        print(
+            f"My name is: {name}. I have {provider} and number is {number}\n")
+
     # sender_credentials = ("email@gmail.com", "password")
     # send_sms_via_email(number, message, provider, sender_credentials, subject="sent using etext")
+
 
 if __name__ == "__main__":
     main()
