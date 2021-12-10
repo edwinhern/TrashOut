@@ -85,9 +85,10 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Python](https://www.python.org/) - Programming Language
+- [Nylas](https://www.nylas.com/) - Calender API
+- [SMS](https://github.com/alfredosequeida/etext/) - Free SMS Implmentation
+
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@edwinhern](https://github.com/edwinhern) - Idea & Initial work
