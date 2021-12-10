@@ -1,9 +1,9 @@
 from pymongo import MongoClient
-import dns 
+import dns
+
 
 class Connect(object):
-    @staticmethod    
+    @staticmethod
     def get_connection():
-        return MongoClient("id")
-    
-        
+        return MongoClient(
+            "test")
