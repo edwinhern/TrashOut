@@ -1,7 +1,7 @@
 # TrashCan 
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="https://github.com/edwinhern/TrashOut/blob/main/images/austin-poon-JO_S6ewBqAk-unsplash.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">TrashCan</h3>
