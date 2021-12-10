@@ -17,7 +17,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Notifies roommates when it is their week to take out the trash.
     <br> 
 </p>
 
