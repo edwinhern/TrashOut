@@ -10,7 +10,7 @@
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
   [![CodeQL](https://github.com/edwinhern/TrashOut/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/edwinhern/TrashOut/actions/workflows/codeql-analysis.yml)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/edwinhern/TrashOut/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
